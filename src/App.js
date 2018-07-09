@@ -4,6 +4,7 @@ import Location from './Location'
 import Contactus from './Contactus'
 import Nav from './Nav'
 import Menu from './Menu'
+import Style from './style.css'
 
 export default class App extends React.Component {
 
@@ -14,7 +15,7 @@ export default class App extends React.Component {
   render() {
     return <div className="wrapper">
       <section className="bg1">
-        <img className="logo" src="https://s3-ap-southeast-2.amazonaws.com/craftypint/crafty4/seller/Dan-logo-LARGE-171103-075155.png"/>
+        <img className="logo" src="https://s3-ap-southeast-2.amazonaws.com/craftypint/crafty4/seller/Dan-logo-LARGE-171103-075155.png" alt=""/>
       </section>
       <section className="section static">
         <Menu/>
