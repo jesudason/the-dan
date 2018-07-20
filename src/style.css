@@ -41,16 +41,8 @@ body {
 }
 
 .long {
-  height: 100vh;
+  height: 70vh;
 }
-
-.logo {
-  background-size: cover;
-  overflow: hidden;
-  height: 400px;
-  margin-left: 10px;
-}
-
 
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -63,7 +55,84 @@ p {
   margin: 8px;
 }
 
+/* First Page */
+
+.logo {
+  background-size: cover;
+  overflow: hidden;
+  height: 400px;
+  margin-left: 10px;
+}
+
+/*Nav Bar - replaced with icon and dropdown for mobile*/
+.nav {
+  display: block;
+  background-color: #090909;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+ul {
+  width: 100vw;
+}
+
+li {
+  display: inline-block;
+  width: 19vw;
+  border-right: 1px solid #bbb;
+  text-align: center;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* About Us */
+
+/* Menu buttons */
+button {
+  border: white 2px solid;
+  color: white;
+  background:rgba(0,0,0,0.5);
+  border-radius: 30px;
+  margin: 20px;
+  padding: 30px;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+button:focus {
+  /*background-color: pink;*/
+  outline: 0 !important;
+  box-shadow: 0 0 3pt 2pt blue;
+  box-shadow: 0 0 5pt 4pt purple;
+
+}
+
+.menu-downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /*Contact Us */
+section:last-child {
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+}
+
 iframe {
    width: 100vw; 
    height: 45vh; 
@@ -117,45 +186,13 @@ svg {
   width: 100%;
 }
 
+/* Gallery */
 
-/*Nav Bar*/
-.nav {
-  display: block;
-  background-color: #090909;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-}
-
-ul {
-  width: 100vw;
-}
-
-li {
-  display: inline-block;
-  width: 19vw;
-  border-right: 1px solid #bbb;
-  text-align: center;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-/*facebook events*/
-
-section:last-child {
-  height: 100vh;  
+.container {
   display: flex;
   flex-direction: column;
-  background-color: black;
   justify-content: center;
+  height: 100vh;
 }
 
 .carousel {
@@ -163,11 +200,11 @@ section:last-child {
   overflow: visible;
   overflow-x: scroll;
   overflow-y: hidden; 
-  height: 500px;
+  height: 40vh;
 }
 
 .gallery-img {
-  width: 1000px;
+  width: 500px;
   display: inline-block;
   vertical-align: top;  
 }
@@ -176,6 +213,9 @@ section:last-child {
   /* Front page */
   .logo { 
     height: 200px;
+  }
+  .nav {
+    visibility: hidden;
   }
   /* Contact Us*/
   .hours {
@@ -200,15 +240,26 @@ section:last-child {
   .contact-details {
     display: none;
   }
-  iframe {
-    /*height: 30vh;*/
-  }
   .contact-div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .nav {
-    visibility: hidden;
+  /* Download buttons */
+  button {
+    width: 65vw;
+    padding: 10px;
+    font-size: 27px;  
   }
+}
+.test {
+  height: 100px;
+  font-size: 36px;
+  border: 1px solid red;
+  position: absolute;
+  background-color: transparent;
+}
+
+.about {
+  backface-visibility: 
 }

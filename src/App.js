@@ -18,10 +18,14 @@ export default class App extends React.Component {
         <img className="logo" src="https://s3-ap-southeast-2.amazonaws.com/craftypint/crafty4/seller/Dan-logo-LARGE-171103-075155.png" alt=""/>
         <Nav/>
       </section>
-      <section className="section short about" id="about-us">
+      <section className="section short about" id="about-us">  
         <AboutUs/>
       </section>
       <section className="bg3">
+        <div className="menu-downloads">
+          <button>View Menu</button>
+          <button>View Drinks List</button>
+        </div>
       </section> 
       <section className="section short functions" id="functions">
         <Functions/>
