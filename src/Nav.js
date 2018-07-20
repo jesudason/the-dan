@@ -9,7 +9,7 @@ export default function Nav(props) {
         <li><Scrollchor to="#functions" className="nav-link">Functions</Scrollchor></li>
         <li><Scrollchor to="#events" className="nav-link">Events</Scrollchor></li>
         <li><Scrollchor to="#contact-us" className="nav-link">Contact Us</Scrollchor></li>
-        <li><Scrollchor to="#socials" className="nav-link">Socials</Scrollchor></li>
+        <li><Scrollchor to="#socials" className="nav-link">Gallery</Scrollchor></li>
       </ul>
      </div>  
 

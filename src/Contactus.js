@@ -7,19 +7,19 @@ import FaMapMarker from 'react-icons/lib/fa/map-marker'
 export default function Contactus(props) {
 
   return(
-    <div className="contact">
+    <div className="contact-div">
       <div className="contact-icons">
-        <a href="mailto:mail@thedan.com.au"><FaEnvelope />
-        </a>        
         <a href="tel:+61393471502"><FaPhone />
         </a>
+        <a href="mailto:mail@thedan.com.au"><FaEnvelope />
+        </a>        
         <a href="https://twitter.com/danochotel"><FaTwitter />
         </a>
       </div>
       <div className="contact-details">
-        <p>tel:+61393471502</p>
+        <p>+61 3 9347 1502</p>
         <p>mail@thedan.com.au</p>
-        <p>'https://twitter.com/danochotel'</p>
+        <p>twitter.com/danochotel</p>
       </div>
     </div>  
   )
