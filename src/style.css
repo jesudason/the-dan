@@ -1,8 +1,7 @@
 body {
   margin: 0;
 }
-
-.bg1, .bg2, .bg3 {
+.bg1, .bg2, .bg3, .bg4 {
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -10,18 +9,19 @@ body {
     background-size: cover;   
     margin: 0;
 }
-
 .bg1 {
   background-image: url('./images/thedan.jpg');  
 }
-
 .bg2 {
   background-image: url('./images/danfire.jpg');
 }
-
 .bg3 {
   background-image: url('./images/taplist.jpg');
 }
+.bg4 {
+  background-image: url('./images/guinness.jpg');
+}
+
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -34,6 +34,10 @@ body {
   /*align-items: center;*/
   color: white;
   text-shadow: 0 0 5px #000;
+}
+
+.section:last-child {
+  height: 100vh;
 }
 
 .short {  
@@ -156,17 +160,17 @@ iframe {
   /*background-color: blue;*/
 }
 
-.contact-icons, .contact-details {
+/*.contact-icons, .contact-details {
   display: inline-block;
   line-height: 40px;
 
 }
-
+*/
 .contact-icons {
-  width: 25%;
+  display: none;
 }
 
-.contact-details {
+/*.contact-details {
   width: 68%;
   margin-left: 40px;
 }
@@ -178,13 +182,11 @@ iframe {
 
 .contact-details p {
   width: 100vw;
-  /*font-size: 30px;*/
-
 }
 
 svg {
   width: 100%;
-}
+}*/
 
 /* Gallery */
 
@@ -229,13 +231,15 @@ svg {
   }
   .contact-icons {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    height: 100vh;
   }
   .contact-icons a {
-    font-size: 2em;
+    font-size: 3em;
+    color: white;
+    margin: 50px;
   }
   .contact-details {
     display: none;

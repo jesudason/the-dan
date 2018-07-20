@@ -8,6 +8,10 @@ import Gallery from './Gallery.js'
 import AboutUs from './AboutUs.js'
 import Functions from './Functions.js'
 import Events from './Events.js'
+import FaEnvelope from 'react-icons/lib/fa/envelope';
+import FaPhone from 'react-icons/lib/fa/phone';
+import FaTwitter from 'react-icons/lib/fa/twitter'; 
+import ContactIcons from './ContactIcons'
 
 export default class App extends React.Component {
 
@@ -40,7 +44,8 @@ export default class App extends React.Component {
       <section className="section long gallery" id="gallery">
         <Gallery/>
       </section>                  
-      <section className="bg2">
+      <section className="bg4">
+        <ContactIcons/>
       </section>
       <section className="section long contact" id="contact-us">  
         <Hours/>

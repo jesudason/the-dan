@@ -8,18 +8,10 @@ export default function Contactus(props) {
 
   return(
     <div className="contact-div">
-      <div className="contact-icons">
-        <a href="tel:+61393471502"><FaPhone />
-        </a>
-        <a href="mailto:mail@thedan.com.au"><FaEnvelope />
-        </a>        
-        <a href="https://twitter.com/danochotel"><FaTwitter />
-        </a>
-      </div>
       <div className="contact-details">
-        <p>+61 3 9347 1502</p>
-        <p>mail@thedan.com.au</p>
-        <p>twitter.com/danochotel</p>
+        <p><FaPhone />+61 3 9347 1502</p>
+        <p><FaEnvelope />mail@thedan.com.au</p>
+        <p><FaTwitter />twitter.com/danochotel</p>
       </div>
     </div>  
   )
