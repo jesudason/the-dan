@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Contactus(props) {
+export default function AboutUs(props) {
 
   return(
     <div>

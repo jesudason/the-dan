@@ -9,11 +9,19 @@ export default function Contactus(props) {
   return(
     <div className="contact">
       <div className="contact-icons">
-        <a href="mailto:mail@thedan.com.au"><FaEnvelope /></a>        
-        <a href="tel:+61393471502"><FaPhone /></a>
-        <a href="https://twitter.com/danochotel"><FaTwitter /></a>
+        <a href="mailto:mail@thedan.com.au"><FaEnvelope />
+        </a>        
+        <a href="tel:+61393471502"><FaPhone />
+        </a>
+        <a href="https://twitter.com/danochotel"><FaTwitter />
+        </a>
       </div>
-      <p><FaMapMarker/> 225 Canning St, Carlton, VIC 3053 </p> 
+      <div className="contact-details">
+        <p>tel:+61393471502</p>
+        <p>mail@thedan.com.au</p>
+        <p>'https://twitter.com/danochotel'</p>
+      </div>
     </div>  
   )
 }
+      // <p><FaMapMarker/> 225 Canning St, Carlton, VIC 3053 </p> 

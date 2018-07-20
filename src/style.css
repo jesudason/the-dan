@@ -27,14 +27,21 @@ body {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
-  background: #090909;
+  background-color: #090909;
   /* For text formatting. */
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
   color: white;
   text-shadow: 0 0 5px #000;
+}
+
+.short {  
+  height: 50vh;
+}
+
+.long {
+  height: 100vh;
 }
 
 .logo {
@@ -44,11 +51,6 @@ body {
   margin-left: 10px;
 }
 
-iframe {
-   width: 100vw; 
-   height: 40vh; 
-   border: 0; 
-}
 
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -60,35 +62,103 @@ p {
   margin: 8px;
 }
 
-.location {
-  height: 40vh;
+/*Contact Us */
+iframe {
+   width: 100vw; 
+   height: 45vh; 
+   border: 0;
+   margin: -5px; 
 }
 
 .contact {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  height: 15vh;
-  /*background-color: blue;*/
-}
-
-.hours {
-  margin: 20px;
-  height: 50vh;
-}
-
-.contact-icons {
-  padding: 10px;
 }
 
 .contact-icons a {
-  margin: 20px;
   color: white;
-  font-size: 32px;
+  /*font-size: 10px;*/
 }
 
-.contact p {
-  font-style: italic;
-  vertical-align: baseline;
+@media only screen and (max-width: 600px) {
+  .hours {
+    margin: 20px;
+    height: 30vh;    
+  }
+  .hours p {
+    font-size: 16px;
+  }
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .contact-icons a {
+    font-size: 25px;
+  }
+  .contact-details {
+    display: none;
+  }
+}
+
+
+/*Nav Bar*/
+.nav {
+  display: block;
+  background-color: #090909;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+ul {
+  width: 100vw;
+}
+
+li {
+  display: inline-block;
+  width: 19vw;
+  border-right: 1px solid #bbb;
+  text-align: center;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*facebook events*/
+
+section:last-child {
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+}
+
+.container {
+}
+
+.carousel {
+  white-space: nowrap;
+  overflow: visible;
+  overflow-x: scroll;
+  overflow-y: hidden; 
+  height: 500px;
+}
+
+.gallery-img {
+  width: 1000px;
+  display: inline-block;
+  vertical-align: top;  
 }
