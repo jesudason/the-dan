@@ -8,7 +8,6 @@ import Gallery from './Gallery.js'
 import AboutUs from './AboutUs.js'
 import Functions from './Functions.js'
 import Events from './Events.js'
-import Scrollchor from 'react-scrollchor';
 
 export default class App extends React.Component {
 
@@ -34,16 +33,16 @@ export default class App extends React.Component {
       </section>      
       <section className="bg3">
       </section> 
+      <section className="section long gallery" id="gallery">
+        <Gallery/>
+      </section>                  
+      <section className="bg2">
+      </section>
       <section className="section long contact" id="contact-us">  
         <Hours/>
         <Contactus/>
         <Location/>        
       </section>   
-      <section className="bg2">
-      </section>
-      <section className="section long gallery" id="gallery">
-        <Gallery/>
-      </section>                  
     </div>
   }
 
